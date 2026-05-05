@@ -1,0 +1,2379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heavenly Therapeutic Massage "Massage and skincare"</title>
+    
+    <!-- SEO & OG Meta Tags -->
+    <meta name="description" content="Rejuvenate your mind and body with premium massage and skincare services in Homestead, FL. Specializing in post-cosmetic surgery care and lymphatic drainage.">
+    <meta property="og:title" content="Heavenly Therapeutic Massage &quot;Massage and skincare&quot;">
+    <meta property="og:description" content="Rejuvenate your mind and body with premium massage and skincare services in Homestead, FL. Specializing in post-cosmetic surgery care and lymphatic drainage.">
+    <meta property="og:image" content="./image-1.jpg">
+    <meta property="og:type" content="website">
+    
+    <!-- Dynamic SVG Favicon -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%23C29B57'/><text x='50' y='68' font-size='60' fill='white' text-anchor='middle' font-family='Arial,sans-serif' font-weight='bold'>H</text></svg>">
+    
+    <!-- Google Fonts: Cormorant Garamond (Serif) & Montserrat (Sans-serif) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome 6 CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <style>
+        /* ==========================================================================
+           1. CSS VARIABLES & THEME (Dark Luxury Spa)
+           ========================================================================== */
+        :root {
+            /* HSL Palette */
+            --bg-base: hsl(24, 15%, 8%);       /* Deep warm charcoal/brown */
+            --bg-surface: hsl(24, 15%, 12%);    /* Slightly lighter for cards */
+            --bg-surface-light: hsl(24, 15%, 16%);
+            --primary: hsl(38, 45%, 55%);       /* Muted Luxury Gold */
+            --primary-hover: hsl(38, 45%, 65%);
+            --accent: hsl(130, 15%, 45%);       /* Soft Healing Sage */
+            --text-main: hsl(30, 20%, 95%);     /* Creamy Off-white */
+            --text-muted: hsl(30, 15%, 70%);
+            
+            /* Typography */
+            --font-head: 'Cormorant Garamond', serif;
+            --font-body: 'Montserrat', sans-serif;
+            
+            /* UI Elements */
+            --radius-sm: 12px;
+            --radius-md: 24px;
+            --radius-lg: 32px;
+            --glass-bg: rgba(255, 255, 255, 0.02);
+            --glass-border: rgba(255, 255, 255, 0.08);
+            --glass-blur: blur(20px);
+            --shadow-glow: 0 10px 40px -10px rgba(194, 155, 87, 0.15);
+            --shadow-deep: 0 20px 50px rgba(0,0,0,0.5);
+            
+            /* Spacing */
+            --section-pad: clamp(5rem, 12vh, 10rem) 5%;
+        }
+
+        /* ==========================================================================
+           2. RESET & BASE STYLES
+           ========================================================================== */
+        *, *::before, *::after {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: var(--font-body);
+            background-color: var(--bg-base);
+            color: var(--text-main);
+            line-height: 1.6;
+            overflow-x: hidden;
+            -webkit-font-smoothing: antialiased;
+            /* Subtle noise texture overlay */
+            background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='0.03'/%3E%3C/svg%3E");
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            font-family: var(--font-head);
+            font-weight: 500;
+            line-height: 1.1;
+            margin-bottom: 1rem;
+        }
+
+        p {
+            margin-bottom: 1.5rem;
+            color: var(--text-muted);
+            font-size: clamp(1rem, 1.2vw, 1.1rem);
+        }
+
+        a {
+            color: inherit;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        /* ==========================================================================
+           3. TYPOGRAPHY & UTILITIES
+           ========================================================================== */
+        .h-xl { font-size: clamp(3rem, 8vw, 6.5rem); letter-spacing: -0.02em; line-height: 1; }
+        .h-lg { font-size: clamp(2.5rem, 5vw, 4.5rem); }
+        .h-md { font-size: clamp(2rem, 4vw, 3.5rem); }
+        .h-sm { font-size: clamp(1.5rem, 2.5vw, 2.5rem); }
+        
+        .eyebrow {
+            font-family: var(--font-body);
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            letter-spacing: 0.2em;
+            color: var(--primary);
+            font-weight: 600;
+            display: block;
+            margin-bottom: 1rem;
+        }
+
+        .text-primary { color: var(--primary); }
+        .text-center { text-align: center; }
+        
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            width: 100%;
+        }
+
+        .glass-panel {
+            background: var(--glass-bg);
+            backdrop-filter: var(--glass-blur);
+            -webkit-backdrop-filter: var(--glass-blur);
+            border: 1px solid var(--glass-border);
+            border-radius: var(--radius-md);
+        }
+
+        /* Buttons */
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.75rem;
+            padding: 1rem 2.5rem;
+            border-radius: 999px;
+            font-family: var(--font-body);
+            font-weight: 600;
+            font-size: 1rem;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            cursor: pointer;
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            border: none;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .btn-primary {
+            background: var(--primary);
+            color: var(--bg-base);
+            box-shadow: 0 4px 15px rgba(194, 155, 87, 0.2);
+        }
+
+        .btn-primary:hover {
+            background: var(--primary-hover);
+            transform: translateY(-3px) scale(1.02);
+            box-shadow: 0 10px 25px rgba(194, 155, 87, 0.4);
+        }
+
+        .btn-outline {
+            background: transparent;
+            color: var(--text-main);
+            border: 1px solid var(--glass-border);
+            backdrop-filter: blur(10px);
+        }
+
+        .btn-outline:hover {
+            border-color: var(--primary);
+            color: var(--primary);
+            transform: translateY(-3px);
+        }
+
+        /* ==========================================================================
+           4. ANIMATIONS
+           ========================================================================== */
+        @keyframes heroReveal {
+            from { opacity: 0; transform: translateY(40px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes pulse {
+            0% { box-shadow: 0 0 0 0 rgba(194, 155, 87, 0.4); }
+            70% { box-shadow: 0 0 0 15px rgba(194, 155, 87, 0); }
+            100% { box-shadow: 0 0 0 0 rgba(194, 155, 87, 0); }
+        }
+
+        @keyframes pulseGreen {
+            0% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.4); }
+            70% { box-shadow: 0 0 0 10px rgba(37, 211, 102, 0); }
+            100% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0); }
+        }
+
+        @keyframes marquee {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-50%); }
+        }
+
+        .reveal {
+            opacity: 0;
+            transform: translateY(50px);
+            transition: all 1s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .reveal.revealed {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* ==========================================================================
+           5. PRELOADER
+           ========================================================================== */
+        #preloader {
+            position: fixed;
+            top: 0; left: 0; width: 100%; height: 100%;
+            background: var(--bg-base);
+            z-index: 99999;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: opacity 0.8s ease, visibility 0.8s ease;
+        }
+        
+        .loader-text {
+            font-family: var(--font-head);
+            font-size: clamp(1.5rem, 5vw, 3.5rem);
+            color: var(--primary);
+            padding: 0 2rem;
+            text-align: center;
+            word-break: break-word;
+            max-width: 90vw;
+            animation: pulseText 2s infinite;
+        }
+
+        @keyframes pulseText {
+            0%, 100% { opacity: 0.5; transform: scale(0.98); }
+            50% { opacity: 1; transform: scale(1); }
+        }
+
+        /* ==========================================================================
+           6. HEADER & NAVIGATION
+           ========================================================================== */
+        nav {
+            position: fixed;
+            top: 0; left: 0; width: 100%;
+            padding: 1.5rem 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 1000;
+            transition: all 0.4s ease;
+            border-bottom: 1px solid transparent;
+        }
+
+        nav.scrolled {
+            background: rgba(20, 18, 16, 0.85);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border-bottom: 1px solid var(--glass-border);
+            padding: 1rem 5%;
+        }
+
+        .logo {
+            font-family: var(--font-head);
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: var(--text-main);
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            z-index: 101;
+        }
+
+        .logo span {
+            color: var(--primary);
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2.5rem;
+            align-items: center;
+        }
+
+        .nav-links a {
+            font-size: 0.9rem;
+            font-weight: 500;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            white-space: nowrap;
+            position: relative;
+        }
+
+        .nav-links a::after {
+            content: '';
+            position: absolute;
+            bottom: -5px; left: 0; width: 0; height: 1px;
+            background: var(--primary);
+            transition: width 0.3s ease;
+        }
+
+        .nav-links a:hover::after { width: 100%; }
+
+        .nav-actions {
+            display: flex;
+            align-items: center;
+            gap: 1.5rem;
+        }
+
+        /* Open/Closed Badge */
+        .status-badge {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            padding: 6px 14px;
+            border-radius: 999px;
+            font-size: 0.75rem;
+            font-weight: 700;
+            letter-spacing: 0.05em;
+            background: var(--glass-bg);
+            border: 1px solid var(--glass-border);
+            backdrop-filter: blur(10px);
+        }
+
+        .status-dot {
+            width: 8px; height: 8px;
+            border-radius: 50%;
+        }
+
+        .status-open .status-dot { background: #25D366; box-shadow: 0 0 10px #25D366; animation: pulseGreen 2s infinite; }
+        .status-open .status-text { color: #25D366; }
+        .status-closed .status-dot { background: #ff4757; }
+        .status-closed .status-text { color: #ff4757; }
+
+        .hamburger {
+            display: none;
+            background: none;
+            border: none;
+            color: var(--text-main);
+            font-size: 1.5rem;
+            cursor: pointer;
+            z-index: 201;
+        }
+
+        /* ==========================================================================
+           7. STICKY SIDEBAR
+           ========================================================================== */
+        .sticky-sidebar {
+            position: fixed;
+            right: 2rem;
+            top: 50%;
+            transform: translateY(-50%);
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            z-index: 900;
+        }
+
+        .sticky-sidebar a {
+            width: 45px; height: 45px;
+            border-radius: 50%;
+            background: var(--glass-bg);
+            backdrop-filter: blur(10px);
+            border: 1px solid var(--glass-border);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--text-main);
+            font-size: 1.2rem;
+            transition: all 0.3s ease;
+        }
+
+        .sticky-sidebar a:hover {
+            background: var(--primary);
+            color: var(--bg-base);
+            transform: translateX(-5px);
+        }
+
+        /* ==========================================================================
+           8. HERO SECTION
+           ========================================================================== */
+        .hero {
+            min-height: 100vh;
+            padding: calc(100px + 5vh) 5% 5vh;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+            position: relative;
+        }
+
+        .hero-content {
+            z-index: 10;
+        }
+
+        .hero-content > * {
+            opacity: 0;
+            animation: heroReveal 1s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+        }
+
+        .hero-content .eyebrow { animation-delay: 0.1s; }
+        .hero-content h1 { animation-delay: 0.3s; margin-bottom: 1.5rem; }
+        .hero-content p { animation-delay: 0.5s; font-size: 1.2rem; max-width: 90%; margin-bottom: 2.5rem; }
+        .hero-content .btn-group { animation-delay: 0.7s; display: flex; gap: 1rem; flex-wrap: wrap; }
+
+        .hero-image-wrapper {
+            position: relative;
+            height: 75vh;
+            min-height: 500px;
+            border-radius: var(--radius-lg);
+            overflow: hidden;
+            opacity: 0;
+            animation: heroReveal 1.2s cubic-bezier(0.4, 0, 0.2, 1) 0.4s forwards;
+            box-shadow: var(--shadow-deep);
+        }
+
+        .hero-image-wrapper::after {
+            content: '';
+            position: absolute;
+            inset: 0;
+            border-radius: var(--radius-lg);
+            border: 1px solid rgba(255,255,255,0.1);
+            pointer-events: none;
+        }
+
+        .hero-image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transform: scale(1.05);
+            transition: transform 10s ease-out;
+        }
+        
+        .hero:hover .hero-image {
+            transform: scale(1);
+        }
+
+        /* ==========================================================================
+           9. SCROLLING MARQUEE
+           ========================================================================== */
+        .marquee-section {
+            padding: 2rem 0;
+            background: var(--primary);
+            color: var(--bg-base);
+            overflow: hidden;
+            white-space: nowrap;
+            display: flex;
+            border-top: 1px solid rgba(255,255,255,0.1);
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+        }
+
+        .marquee-content {
+            display: flex;
+            animation: marquee 20s linear infinite;
+        }
+
+        .marquee-item {
+            font-family: var(--font-head);
+            font-size: 2rem;
+            font-weight: 600;
+            padding: 0 2rem;
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+        }
+
+        .marquee-item i {
+            font-size: 1rem;
+            opacity: 0.5;
+        }
+
+        /* ==========================================================================
+           10. ABOUT SECTION
+           ========================================================================== */
+        .about-section {
+            padding: var(--section-pad);
+        }
+
+        .about-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 5rem;
+            align-items: center;
+        }
+
+        .about-image {
+            position: relative;
+            border-radius: var(--radius-lg);
+            overflow: hidden;
+        }
+
+        .about-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            aspect-ratio: 4/5;
+        }
+
+        .experience-badge {
+            position: absolute;
+            bottom: -2rem;
+            right: -2rem;
+            background: var(--bg-surface);
+            padding: 2rem;
+            border-radius: 50%;
+            width: 160px;
+            height: 160px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid var(--glass-border);
+            box-shadow: var(--shadow-deep);
+            text-align: center;
+        }
+
+        .experience-badge .num {
+            font-family: var(--font-head);
+            font-size: 3rem;
+            color: var(--primary);
+            line-height: 1;
+        }
+        .experience-badge .text {
+            font-size: 0.7rem;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+        }
+
+        /* ==========================================================================
+           11. STATS COUNTER
+           ========================================================================== */
+        .stats-section {
+            padding: 4rem 5%;
+            background: var(--bg-surface);
+            border-top: 1px solid var(--glass-border);
+            border-bottom: 1px solid var(--glass-border);
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .stat-card {
+            text-align: center;
+            padding: 2rem;
+        }
+
+        .stat-icon {
+            font-size: 2.5rem;
+            color: var(--primary);
+            margin-bottom: 1rem;
+        }
+
+        .stat-number {
+            font-family: var(--font-head);
+            font-size: 3.5rem;
+            font-weight: 600;
+            line-height: 1;
+            margin-bottom: 0.5rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .stat-label {
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            color: var(--text-muted);
+        }
+
+        /* ==========================================================================
+           12. WHY CHOOSE US
+           ========================================================================== */
+        .features-section {
+            padding: var(--section-pad);
+            background: url('./image-3.jpg') center/cover fixed;
+            position: relative;
+        }
+
+        .features-section::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: rgba(20, 18, 16, 0.92);
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 2rem;
+            position: relative;
+            z-index: 2;
+        }
+
+        .feature-card {
+            padding: 3rem 2rem;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-10px);
+            background: rgba(255,255,255,0.05);
+        }
+
+        .feature-icon {
+            width: 80px; height: 80px;
+            margin: 0 auto 1.5rem;
+            background: var(--glass-bg);
+            border: 1px solid var(--glass-border);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+            color: var(--primary);
+        }
+
+        /* ==========================================================================
+           13. SERVICES SECTION
+           ========================================================================== */
+        .services-section {
+            padding: var(--section-pad);
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2.5rem;
+            margin-top: 4rem;
+        }
+
+        .service-card {
+            border-radius: var(--radius-md);
+            overflow: hidden;
+            position: relative;
+            group: hover;
+            transition: all 0.4s ease;
+        }
+
+        .service-img {
+            height: 350px;
+            width: 100%;
+            object-fit: cover;
+            transition: transform 0.6s ease;
+        }
+
+        .service-card:hover .service-img {
+            transform: scale(1.08);
+        }
+
+        .service-content {
+            position: absolute;
+            bottom: 0; left: 0; width: 100%;
+            padding: 2.5rem 2rem;
+            background: linear-gradient(to top, rgba(15,13,12,1) 0%, rgba(15,13,12,0.8) 50%, transparent 100%);
+            transform: translateY(20px);
+            transition: transform 0.4s ease;
+        }
+
+        .service-card:hover .service-content {
+            transform: translateY(0);
+        }
+
+        .service-title {
+            font-size: 1.8rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .service-desc {
+            font-size: 0.9rem;
+            opacity: 0;
+            transition: opacity 0.4s ease 0.1s;
+            margin-bottom: 1rem;
+        }
+
+        .service-card:hover .service-desc {
+            opacity: 1;
+        }
+
+        .service-link {
+            color: var(--primary);
+            font-weight: 600;
+            text-transform: uppercase;
+            font-size: 0.85rem;
+            letter-spacing: 0.1em;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        /* ==========================================================================
+           14. PRICING MENU
+           ========================================================================== */
+        .menu-section {
+            padding: var(--section-pad);
+            background: var(--bg-surface);
+        }
+
+        .menu-container {
+            max-width: 900px;
+            margin: 4rem auto 0;
+        }
+
+        .menu-category {
+            margin-bottom: 4rem;
+        }
+
+        .menu-category-title {
+            font-size: 2.5rem;
+            color: var(--primary);
+            border-bottom: 1px solid var(--glass-border);
+            padding-bottom: 1rem;
+            margin-bottom: 2rem;
+        }
+
+        .menu-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            margin-bottom: 1.5rem;
+            position: relative;
+        }
+
+        .menu-item::before {
+            content: '';
+            position: absolute;
+            bottom: 5px; left: 0; right: 0;
+            border-bottom: 2px dotted var(--glass-border);
+            z-index: 1;
+        }
+
+        .menu-name {
+            font-family: var(--font-head);
+            font-size: 1.4rem;
+            background: var(--bg-surface);
+            padding-right: 1rem;
+            z-index: 2;
+            position: relative;
+        }
+
+        .menu-price {
+            font-family: var(--font-body);
+            font-weight: 600;
+            color: var(--primary);
+            background: var(--bg-surface);
+            padding-left: 1rem;
+            z-index: 2;
+            position: relative;
+        }
+
+        .menu-desc {
+            font-size: 0.9rem;
+            color: var(--text-muted);
+            margin-top: -0.5rem;
+            margin-bottom: 2rem;
+            max-width: 80%;
+        }
+
+        /* ==========================================================================
+           15. NEWSLETTER
+           ========================================================================== */
+        .newsletter-section {
+            padding: 6rem 5%;
+            text-align: center;
+            background: linear-gradient(rgba(20,18,16,0.9), rgba(20,18,16,0.9)), url('./image-6.jpg') center/cover fixed;
+        }
+
+        .newsletter-box {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 4rem;
+        }
+
+        .newsletter-form {
+            display: flex;
+            gap: 1rem;
+            margin-top: 2rem;
+        }
+
+        .newsletter-input {
+            flex: 1;
+            padding: 1rem 1.5rem;
+            border-radius: 999px;
+            border: 1px solid var(--glass-border);
+            background: rgba(255,255,255,0.05);
+            color: white;
+            font-family: var(--font-body);
+            outline: none;
+        }
+        
+        .newsletter-input:focus {
+            border-color: var(--primary);
+        }
+
+        /* ==========================================================================
+           16. TEAM SECTION
+           ========================================================================== */
+        .team-section {
+            padding: var(--section-pad);
+        }
+
+        .team-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 3rem;
+            margin-top: 4rem;
+        }
+
+        .team-card {
+            text-align: center;
+        }
+
+        .team-img-wrap {
+            width: 100%;
+            aspect-ratio: 3/4;
+            border-radius: var(--radius-md);
+            overflow: hidden;
+            margin-bottom: 1.5rem;
+            position: relative;
+        }
+
+        .team-img-wrap img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+
+        .team-card:hover .team-img-wrap img {
+            transform: scale(1.05);
+        }
+
+        .team-name {
+            font-size: 1.8rem;
+            margin-bottom: 0.2rem;
+        }
+
+        .team-role {
+            color: var(--primary);
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            margin-bottom: 1rem;
+        }
+
+        /* ==========================================================================
+           17. BEFORE & AFTER SPOTLIGHT
+           ========================================================================== */
+        .spotlight-section {
+            padding: var(--section-pad);
+            background: var(--bg-surface);
+        }
+
+        .spotlight-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .spotlight-card {
+            position: relative;
+            border-radius: var(--radius-md);
+            overflow: hidden;
+        }
+
+        .spotlight-card img {
+            width: 100%;
+            aspect-ratio: 4/3;
+            object-fit: cover;
+        }
+
+        .spotlight-label {
+            position: absolute;
+            top: 1.5rem;
+            left: 1.5rem;
+            background: rgba(0,0,0,0.7);
+            backdrop-filter: blur(10px);
+            padding: 0.5rem 1.5rem;
+            border-radius: 999px;
+            font-weight: 600;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            font-size: 0.8rem;
+        }
+
+        /* ==========================================================================
+           18. SOCIAL FEED (INSTAGRAM)
+           ========================================================================== */
+        .social-section {
+            padding: var(--section-pad);
+            text-align: center;
+        }
+
+        .social-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 1rem;
+            margin-top: 3rem;
+        }
+
+        .social-item {
+            position: relative;
+            aspect-ratio: 1/1;
+            overflow: hidden;
+            border-radius: var(--radius-sm);
+            cursor: pointer;
+        }
+
+        .social-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.4s ease;
+        }
+
+        .social-overlay {
+            position: absolute;
+            inset: 0;
+            background: rgba(0,0,0,0.6);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 1.5rem;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .social-item:hover img { transform: scale(1.1); }
+        .social-item:hover .social-overlay { opacity: 1; }
+
+        .social-stat {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-weight: 600;
+            font-size: 1.2rem;
+        }
+
+        /* ==========================================================================
+           19. LUXURY BENTO GALLERY (ALL 20 IMAGES)
+           ========================================================================== */
+        .gallery-section {
+            padding: var(--section-pad);
+            background: var(--bg-surface);
+        }
+
+        .bento-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-auto-rows: 300px;
+            gap: 1rem;
+            margin-top: 4rem;
+        }
+
+        .bento-item {
+            position: relative;
+            border-radius: var(--radius-sm);
+            overflow: hidden;
+        }
+
+        .bento-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+            filter: grayscale(30%);
+        }
+
+        .bento-item:hover img {
+            transform: scale(1.05);
+            filter: grayscale(0%);
+        }
+
+        .bento-item::after {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(to top, rgba(0,0,0,0.4), transparent);
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .bento-item:hover::after { opacity: 1; }
+
+        /* Asymmetric Spans to make it look like a Bento Box */
+        .bento-item:nth-child(1) { grid-column: span 2; grid-row: span 2; }
+        .bento-item:nth-child(4) { grid-column: span 2; }
+        .bento-item:nth-child(7) { grid-row: span 2; }
+        .bento-item:nth-child(10) { grid-column: span 2; }
+        .bento-item:nth-child(14) { grid-column: span 2; grid-row: span 2; }
+        .bento-item:nth-child(18) { grid-column: span 2; }
+
+        /* ==========================================================================
+           20. REVIEWS
+           ========================================================================== */
+        .reviews-section {
+            padding: var(--section-pad);
+        }
+
+        .reviews-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+            margin-top: 4rem;
+            margin-bottom: 4rem;
+        }
+
+        .review-card {
+            padding: 3rem 2rem;
+            position: relative;
+        }
+
+        .review-card i.fa-quote-left {
+            position: absolute;
+            top: 2rem;
+            left: 2rem;
+            font-size: 4rem;
+            color: rgba(194, 155, 87, 0.1);
+            z-index: 0;
+        }
+
+        .stars {
+            color: #FFD700;
+            margin-bottom: 1.5rem;
+            position: relative;
+            z-index: 1;
+        }
+
+        .review-text {
+            font-style: italic;
+            margin-bottom: 2rem;
+            position: relative;
+            z-index: 1;
+        }
+
+        .reviewer-name {
+            font-weight: 600;
+            color: var(--primary);
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            font-size: 0.9rem;
+        }
+
+        /* ==========================================================================
+           21. FAQ SECTION
+           ========================================================================== */
+        .faq-section {
+            padding: var(--section-pad);
+            background: var(--bg-surface);
+        }
+
+        .faq-container {
+            max-width: 800px;
+            margin: 4rem auto 0;
+        }
+
+        .faq-item {
+            border-bottom: 1px solid var(--glass-border);
+            margin-bottom: 1rem;
+        }
+
+        .faq-question {
+            width: 100%;
+            text-align: left;
+            background: none;
+            border: none;
+            color: var(--text-main);
+            font-family: var(--font-head);
+            font-size: 1.5rem;
+            padding: 1.5rem 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            cursor: pointer;
+        }
+
+        .faq-question i {
+            color: var(--primary);
+            transition: transform 0.3s ease;
+        }
+
+        .faq-item.active .faq-question i {
+            transform: rotate(180deg);
+        }
+
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.4s ease;
+        }
+
+        .faq-answer p {
+            padding-bottom: 1.5rem;
+        }
+
+        /* ==========================================================================
+           22. MAP & HOURS
+           ========================================================================== */
+        .location-section {
+            padding: var(--section-pad);
+        }
+
+        .location-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+        }
+
+        .hours-card {
+            padding: 3rem;
+        }
+
+        .hours-list {
+            list-style: none;
+            margin-top: 2rem;
+        }
+
+        .hours-list li {
+            display: flex;
+            justify-content: space-between;
+            padding: 1rem 0;
+            border-bottom: 1px solid var(--glass-border);
+        }
+
+        .hours-list li:last-child { border: none; }
+        
+        .day { font-weight: 600; }
+        .time { color: var(--text-muted); }
+
+        /* ==========================================================================
+           23. FINAL CTA BANNER
+           ========================================================================== */
+        .final-cta {
+            padding: 8rem 5%;
+            text-align: center;
+            background: linear-gradient(rgba(20,18,16,0.85), rgba(20,18,16,0.95)), url('./image-15.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            position: relative;
+        }
+
+        .final-cta-content {
+            max-width: 800px;
+            margin: 0 auto;
+            position: relative;
+            z-index: 2;
+        }
+
+        /* ==========================================================================
+           24. FOOTER
+           ========================================================================== */
+        footer {
+            background: #0a0908;
+            padding: 6rem 5% 2rem;
+            border-top: 1px solid rgba(255,255,255,0.05);
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1.5fr 1fr;
+            gap: 4rem;
+            margin-bottom: 4rem;
+        }
+
+        .footer-col h4 {
+            font-size: 1.5rem;
+            color: var(--primary);
+            margin-bottom: 1.5rem;
+        }
+
+        .footer-links {
+            list-style: none;
+        }
+
+        .footer-links li {
+            margin-bottom: 1rem;
+        }
+
+        .footer-links a {
+            color: var(--text-muted);
+            transition: color 0.3s ease;
+        }
+
+        .footer-links a:hover {
+            color: var(--primary);
+        }
+
+        .contact-info p {
+            display: flex;
+            align-items: flex-start;
+            gap: 1rem;
+            margin-bottom: 1rem;
+        }
+
+        .contact-info i {
+            color: var(--primary);
+            margin-top: 5px;
+        }
+
+        .qr-code {
+            width: 120px;
+            height: 120px;
+            border-radius: 12px;
+            margin-bottom: 1.5rem;
+            background: white;
+            padding: 5px;
+        }
+
+        .social-icons {
+            display: flex;
+            gap: 1rem;
+        }
+
+        .social-icons a {
+            width: 40px; height: 40px;
+            border-radius: 50%;
+            background: var(--glass-bg);
+            border: 1px solid var(--glass-border);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s ease;
+        }
+
+        .social-icons a:hover {
+            background: var(--primary);
+            color: var(--bg-base);
+            transform: translateY(-3px);
+        }
+
+        .footer-bottom {
+            text-align: center;
+            padding-top: 2rem;
+            border-top: 1px solid var(--glass-border);
+            color: var(--text-muted);
+            font-size: 0.9rem;
+        }
+
+        /* ==========================================================================
+           25. FLOATING CHAT WIDGET
+           ========================================================================== */
+        .chat-widget {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            z-index: 9990;
+        }
+
+        .chat-fab {
+            width: 65px; height: 65px;
+            border-radius: 50%;
+            background: var(--primary);
+            color: var(--bg-base);
+            border: none;
+            font-size: 1.8rem;
+            cursor: pointer;
+            box-shadow: var(--shadow-deep);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: transform 0.3s cubic-bezier(0.4,0,0.2,1);
+            animation: pulse 2s infinite;
+        }
+
+        .chat-fab:hover { transform: scale(1.1); }
+
+        .chat-panel {
+            position: absolute;
+            bottom: 85px;
+            right: 0;
+            width: 350px;
+            background: rgba(25, 22, 20, 0.95);
+            backdrop-filter: blur(30px);
+            border: 1px solid var(--glass-border);
+            border-radius: var(--radius-md);
+            box-shadow: var(--shadow-deep);
+            overflow: hidden;
+            transform: scale(0.8) translateY(20px);
+            opacity: 0;
+            pointer-events: none;
+            transition: transform 0.3s cubic-bezier(0.4,0,0.2,1), opacity 0.3s ease;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .chat-panel.active {
+            transform: scale(1) translateY(0);
+            opacity: 1;
+            pointer-events: all;
+        }
+
+        .chat-header {
+            padding: 1.2rem;
+            background: rgba(0,0,0,0.2);
+            border-bottom: 1px solid var(--glass-border);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .chat-profile {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .chat-avatar {
+            width: 40px; height: 40px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+        .chat-name { font-weight: 600; font-size: 1rem; }
+        .chat-status { font-size: 0.75rem; color: #25D366; display: flex; align-items: center; gap: 5px; }
+        .chat-status::before { content: ''; width: 6px; height: 6px; background: #25D366; border-radius: 50%; animation: pulseGreen 2s infinite; }
+
+        .chat-body {
+            padding: 1.5rem;
+            height: 300px;
+            overflow-y: auto;
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        .chat-bubble {
+            max-width: 85%;
+            padding: 1rem;
+            border-radius: 16px;
+            font-size: 0.9rem;
+            line-height: 1.4;
+        }
+
+        .bubble-in {
+            background: var(--bg-surface-light);
+            align-self: flex-start;
+            border-bottom-left-radius: 4px;
+        }
+
+        .bubble-out {
+            background: var(--primary);
+            color: var(--bg-base);
+            align-self: flex-end;
+            border-bottom-right-radius: 4px;
+        }
+
+        .chat-time {
+            font-size: 0.7rem;
+            color: var(--text-muted);
+            margin-top: 5px;
+            align-self: flex-start;
+        }
+        .bubble-out + .chat-time { align-self: flex-end; }
+
+        .chat-quick-replies {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin-top: 1rem;
+        }
+
+        .quick-reply-btn {
+            background: transparent;
+            border: 1px solid var(--primary);
+            color: var(--primary);
+            padding: 0.4rem 0.8rem;
+            border-radius: 999px;
+            font-size: 0.8rem;
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+
+        .quick-reply-btn:hover {
+            background: var(--primary);
+            color: var(--bg-base);
+        }
+
+        .chat-input-area {
+            padding: 1rem;
+            border-top: 1px solid var(--glass-border);
+            display: flex;
+            gap: 0.5rem;
+        }
+
+        .chat-input {
+            flex: 1;
+            background: rgba(255,255,255,0.05);
+            border: 1px solid var(--glass-border);
+            border-radius: 999px;
+            padding: 0.8rem 1rem;
+            color: white;
+            font-family: var(--font-body);
+            outline: none;
+        }
+
+        .chat-submit {
+            width: 45px; height: 45px;
+            border-radius: 50%;
+            background: var(--primary);
+            color: var(--bg-base);
+            border: none;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        /* ==========================================================================
+           26. PROMO POPUP
+           ========================================================================== */
+        .popup-overlay {
+            position: fixed;
+            inset: 0;
+            background: rgba(0,0,0,0.8);
+            backdrop-filter: blur(5px);
+            z-index: 99999;
+            display: none;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            transition: opacity 0.4s ease;
+        }
+
+        .popup-content {
+            background: var(--bg-surface);
+            padding: 4rem;
+            border-radius: var(--radius-lg);
+            border: 1px solid var(--glass-border);
+            max-width: 500px;
+            width: 90%;
+            text-align: center;
+            position: relative;
+            transform: translateY(50px);
+            transition: transform 0.4s cubic-bezier(0.4,0,0.2,1);
+            box-shadow: var(--shadow-deep);
+        }
+
+        .popup-close {
+            position: absolute;
+            top: 1.5rem; right: 1.5rem;
+            background: none; border: none;
+            color: var(--text-muted);
+            font-size: 1.5rem;
+            cursor: pointer;
+        }
+
+        /* ==========================================================================
+           27. MANDATORY MOBILE OVERRIDES (DO NOT MODIFY)
+           ========================================================================== */
+        *, *::before, *::after { box-sizing: border-box; }
+        html, body { overflow-x: hidden !important; width: 100%; margin: 0; padding: 0; }
+        img, video, iframe { max-width: 100%; height: auto; }
+        a { color: inherit; text-decoration: none; }
+        
+        /* DESKTOP NAV DEFAULTS */
+        nav, header { position: fixed !important; top: 0 !important; left: 0 !important; width: 100% !important; z-index: 9999 !important; display: flex !important; justify-content: space-between !important; align-items: center !important; padding: 1rem 5% !important; background: rgba(10,10,10,0.9) !important; backdrop-filter: blur(20px) !important; box-sizing: border-box !important; }
+        body { padding-top: 100px !important; }
+        .hamburger, .menu-toggle, .mobile-menu-btn { display: none !important; }
+        .sidebar, .side-bar, .sticky-sidebar { display: flex; }
+        section, .section { padding: clamp(4rem, 8vh, 8rem) 5% !important; width: 100% !important; box-sizing: border-box !important; overflow: hidden; }
+        h1, h2, h3 { overflow-wrap: break-word; word-break: break-word; max-width: 100%; }
+
+        /* MOBILE OVERRIDES */
+        @media (max-width: 768px) {
+            nav, header { padding: 15px !important; background: rgba(0,0,0,0.98) !important; border-bottom: 1px solid rgba(255,255,255,0.05); }
+            nav .logo, nav .brand, header .logo { font-size: 1.1rem !important; max-width: 50vw; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; margin-right: auto; }
+            nav .nav-links, nav .desktop-nav, nav ul { display: none !important; }
+            .hamburger, .menu-toggle, .mobile-menu-btn { display: flex !important; align-items: center; justify-content: center; font-size: 24px; color: white; background: none; border: none; cursor: pointer; z-index: 101; margin-left: 15px; }
+            
+            .hero { min-height: auto !important; padding-top: 130px !important; justify-content: flex-start !important; gap: 2rem !important; }
+            .hero h1, .hero-title { font-size: clamp(2rem, 8vw, 3rem) !important; margin-bottom: 1rem !important; }
+            .hero p, .hero-subtitle { font-size: 1rem !important; margin-bottom: 1.5rem !important; }
+            
+            [class*="grid"], [class*="row"], .about-grid, .services-grid, .team-grid, .gallery-grid, .bento-grid, .footer-grid, .footer-columns, .hero { grid-template-columns: 1fr !important; display: flex !important; flex-direction: column !important; }
+            [class*="grid"] > *, .bento-grid > *, .gallery-grid > * { grid-column: span 1 !important; grid-row: span 1 !important; width: 100% !important; }
+            
+            footer { padding: 2rem 1rem !important; }
+            .hero-buttons, .hero-cta, .hero .btn-group, .hero-actions { display: flex !important; flex-direction: column !important; align-items: center; width: 100%; padding: 0 1rem; }
+            .hero-buttons a, .hero-buttons button, .hero .btn-group a { width: 100% !important; max-width: 320px; text-align: center; box-sizing: border-box; margin: 0 0 15px 0 !important; }
+            
+            [class*="chat-widget"], [class*="floating-chat"], #chat-widget { bottom: 90px !important; right: 15px !important; }
+            .sidebar, .side-bar, .sticky-sidebar { display: none !important; }
+            .cursor-dot, .cursor-outline { display: none !important; }
+
+            /* Sticky Mobile CTA */
+            .mobile-sticky-cta {
+                display: block !important;
+                position: fixed;
+                bottom: 0; left: 0; width: 100%;
+                background: var(--primary);
+                color: var(--bg-base);
+                text-align: center;
+                padding: 1.2rem;
+                font-weight: 700;
+                font-size: 1.1rem;
+                text-transform: uppercase;
+                letter-spacing: 0.1em;
+                z-index: 9998;
+                box-shadow: 0 -5px 20px rgba(0,0,0,0.5);
+            }
+        }
+
+        .mobile-sticky-cta { display: none; }
+    </style>
+</head>
+<body>
+
+    <!-- FULL-SCREEN PRELOADER -->
+    <div id="preloader">
+        <div class="loader-text">Heavenly Therapeutic Massage</div>
+    </div>
+
+    <!-- MOBILE MENU (Step A) -->
+    <div class="mobile-menu" id="mobileMenu" style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.97); z-index: 200; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 1rem; transform: translateX(100%); transition: transform 0.3s ease;">
+        <button class="close-mobile-menu" id="closeMobileMenu" style="position: absolute; top: 20px; right: 20px; background: none; border: none; cursor: pointer;">
+            <i class="fas fa-times" style="font-size:28px;color:white;"></i>
+        </button>
+        <a href="#home" style="color: white; text-decoration: none; font-size: 1.3rem; display: block; padding: 1rem 0;">Home</a>
+        <a href="#about" style="color: white; text-decoration: none; font-size: 1.3rem; display: block; padding: 1rem 0;">About</a>
+        <a href="#services" style="color: white; text-decoration: none; font-size: 1.3rem; display: block; padding: 1rem 0;">Services</a>
+        <a href="#gallery" style="color: white; text-decoration: none; font-size: 1.3rem; display: block; padding: 1rem 0;">Gallery</a>
+        <a href="#reviews" style="color: white; text-decoration: none; font-size: 1.3rem; display: block; padding: 1rem 0;">Reviews</a>
+        <a href="https://www.vagaro.com/googlemap/U2FsdGVkX19u~97P1rbmw6iJ7gZhGV7HQNCS~dK3bQ4=/services?rwg_token=AFd1xnGBqdtRcvrcZkRwK3xIYOzIVJ7sQBW9JRGHjXbSfNVcPGhowsPbvgK-cL99fiCivCi-Z46ud1baQpc2_HHFIOzqGjCUGg%3D%3D" target="_blank" style="color: var(--primary); text-decoration: none; font-size: 1.3rem; display: block; padding: 1rem 0; font-weight: bold;">Book Now</a>
+    </div>
+
+    <!-- HEADER / NAV -->
+    <nav id="navbar">
+        <a href="#" class="logo">
+            <i class="fas fa-spa" style="color: var(--primary);"></i>
+            Heavenly<span>Massage</span>
+        </a>
+        
+        <div class="nav-links">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#gallery">Gallery</a>
+            <a href="#reviews">Reviews</a>
+        </div>
+
+        <div class="nav-actions">
+            <div class="status-badge" id="statusBadge">
+                <div class="status-dot"></div>
+                <span class="status-text">Checking...</span>
+            </div>
+            <a href="https://www.vagaro.com/googlemap/U2FsdGVkX19u~97P1rbmw6iJ7gZhGV7HQNCS~dK3bQ4=/services?rwg_token=AFd1xnGBqdtRcvrcZkRwK3xIYOzIVJ7sQBW9JRGHjXbSfNVcPGhowsPbvgK-cL99fiCivCi-Z46ud1baQpc2_HHFIOzqGjCUGg%3D%3D" target="_blank" class="btn btn-primary" style="padding: 0.6rem 1.5rem; font-size: 0.8rem; display: none;">Book Now</a>
+            <button class="hamburger" id="hamburgerBtn">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- STICKY SIDEBAR -->
+    <div class="sticky-sidebar">
+        <a href="tel:7868731191" aria-label="Call Us"><i class="fas fa-phone"></i></a>
+        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+    </div>
+
+    <!-- HERO SECTION -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <span class="eyebrow">HEAVENLY THERAPEUTIC MASSAGE • HOMESTEAD, FL</span>
+            <h1 class="h-xl">Rejuvenate Your Mind.<br>Restore Your Body.</h1>
+            <p>Experience award-winning massage and specialized skincare, including expert post-cosmetic lymphatic drainage to accelerate your healing journey.</p>
+            <div class="btn-group">
+                <a href="https://www.vagaro.com/googlemap/U2FsdGVkX19u~97P1rbmw6iJ7gZhGV7HQNCS~dK3bQ4=/services?rwg_token=AFd1xnGBqdtRcvrcZkRwK3xIYOzIVJ7sQBW9JRGHjXbSfNVcPGhowsPbvgK-cL99fiCivCi-Z46ud1baQpc2_HHFIOzqGjCUGg%3D%3D" target="_blank" class="btn btn-primary">Book Appointment</a>
+                <a href="tel:7868731191" class="btn btn-outline">Call (786) 873-1191</a>
+            </div>
+        </div>
+        <div class="hero-image-wrapper">
+            <img src="./image-1.jpg" alt="Heavenly Therapeutic Massage Interior" class="hero-image">
+        </div>
+    </section>
+
+    <!-- SCROLLING MARQUEE -->
+    <div class="marquee-section">
+        <div class="marquee-content">
+            <div class="marquee-item">DEEP TISSUE MASSAGE <i class="fas fa-star"></i> LYMPHATIC DRAINAGE <i class="fas fa-star"></i> POST-OP CARE <i class="fas fa-star"></i> SKINCARE & FACIALS <i class="fas fa-star"></i> RELAXATION THERAPY <i class="fas fa-star"></i></div>
+            <div class="marquee-item">DEEP TISSUE MASSAGE <i class="fas fa-star"></i> LYMPHATIC DRAINAGE <i class="fas fa-star"></i> POST-OP CARE <i class="fas fa-star"></i> SKINCARE & FACIALS <i class="fas fa-star"></i> RELAXATION THERAPY <i class="fas fa-star"></i></div>
+        </div>
+    </div>
+
+    <!-- ABOUT SECTION -->
+    <section class="about-section" id="about">
+        <div class="container about-grid">
+            <div class="about-image reveal">
+                <img src="./image-2.jpg" alt="Massage Therapy Session">
+                <div class="experience-badge">
+                    <span class="num">5</span>
+                    <span class="text">Star Rated<br>Excellence</span>
+                </div>
+            </div>
+            <div class="about-content reveal">
+                <span class="eyebrow">Our Philosophy</span>
+                <h2 class="h-md">Healing Hands, Heavenly Results.</h2>
+                <p>At Heavenly Therapeutic Massage, we believe that true wellness comes from a balance of mind, body, and spirit. Located in the heart of Homestead, FL, our sanctuary is designed to transport you away from the stresses of daily life.</p>
+                <p>We specialize in advanced therapeutic techniques, including highly sought-after lymphatic drainage for post-cosmetic surgery care. Our expert therapists listen to your unique needs, whether you seek deep pain relief or profound relaxation, ensuring a customized healing experience every time.</p>
+                <a href="#services" class="btn btn-outline" style="margin-top: 1rem;">Explore Our Services</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- STATS COUNTER SECTION -->
+    <section class="stats-section reveal">
+        <div class="stats-grid">
+            <div class="stat-card">
+                <i class="fas fa-star stat-icon"></i>
+                <div class="stat-number"><span class="count" data-target="282">0</span>+</div>
+                <div class="stat-label">5-Star Reviews</div>
+            </div>
+            <div class="stat-card">
+                <i class="fas fa-hands-holding-circle stat-icon"></i>
+                <div class="stat-number"><span class="count" data-target="5">0</span></div>
+                <div class="stat-label">Star Rating</div>
+            </div>
+            <div class="stat-card">
+                <i class="fas fa-award stat-icon"></i>
+                <div class="stat-number"><span class="count" data-target="10">0</span>+</div>
+                <div class="stat-label">Years Experience</div>
+            </div>
+            <div class="stat-card">
+                <i class="fas fa-smile stat-icon"></i>
+                <div class="stat-number"><span class="count" data-target="5000">0</span>+</div>
+                <div class="stat-label">Happy Clients</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- WHY CHOOSE US -->
+    <section class="features-section">
+        <div class="container">
+            <div class="text-center reveal" style="margin-bottom: 4rem; position: relative; z-index: 2;">
+                <span class="eyebrow">The Heavenly Difference</span>
+                <h2 class="h-md">Why Choose Us</h2>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card glass-panel reveal" style="transition-delay: 0.1s;">
+                    <div class="feature-icon"><i class="fas fa-user-md"></i></div>
+                    <h3 class="h-sm">Expert Therapists</h3>
+                    <p>Highly trained professionals who listen to your body's specific needs.</p>
+                </div>
+                <div class="feature-card glass-panel reveal" style="transition-delay: 0.2s;">
+                    <div class="feature-icon"><i class="fas fa-heartbeat"></i></div>
+                    <h3 class="h-sm">Post-Op Specialists</h3>
+                    <p>Advanced lymphatic drainage to accelerate your cosmetic surgery recovery.</p>
+                </div>
+                <div class="feature-card glass-panel reveal" style="transition-delay: 0.3s;">
+                    <div class="feature-icon"><i class="fas fa-leaf"></i></div>
+                    <h3 class="h-sm">Premium Skincare</h3>
+                    <p>Rejuvenating facials using top-tier, organic products for a radiant glow.</p>
+                </div>
+                <div class="feature-card glass-panel reveal" style="transition-delay: 0.4s;">
+                    <div class="feature-icon"><i class="fas fa-gift"></i></div>
+                    <h3 class="h-sm">Gift Certificates</h3>
+                    <p>Give the gift of relaxation and healing to your loved ones.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SERVICES SECTION -->
+    <section class="services-section" id="services">
+        <div class="container">
+            <div class="text-center reveal">
+                <span class="eyebrow">Our Treatments</span>
+                <h2 class="h-md">Signature Services</h2>
+            </div>
+            <div class="services-grid">
+                <div class="service-card reveal" style="transition-delay: 0.1s;">
+                    <img src="./image-3.jpg" alt="Deep Tissue Massage" class="service-img">
+                    <div class="service-content">
+                        <h3 class="service-title h-sm">Deep Tissue Massage</h3>
+                        <p class="service-desc">Target severe tension in the deeper layers of muscle and connective tissue. Ideal for chronic pain relief.</p>
+                        <a href="https://www.vagaro.com/googlemap/U2FsdGVkX19u~97P1rbmw6iJ7gZhGV7HQNCS~dK3bQ4=/services?rwg_token=AFd1xnGBqdtRcvrcZkRwK3xIYOzIVJ7sQBW9JRGHjXbSfNVcPGhowsPbvgK-cL99fiCivCi-Z46ud1baQpc2_HHFIOzqGjCUGg%3D%3D" target="_blank" class="service-link">Book Now <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="service-card reveal" style="transition-delay: 0.2s;">
+                    <img src="./image-4.jpg" alt="Lymphatic Drainage" class="service-img">
+                    <div class="service-content">
+                        <h3 class="service-title h-sm">Lymphatic Drainage</h3>
+                        <p class="service-desc">Gentle massage encouraging the movement of lymph fluids. Essential for post-cosmetic surgery healing.</p>
+                        <a href="https://www.vagaro.com/googlemap/U2FsdGVkX19u~97P1rbmw6iJ7gZhGV7HQNCS~dK3bQ4=/services?rwg_token=AFd1xnGBqdtRcvrcZkRwK3xIYOzIVJ7sQBW9JRGHjXbSfNVcPGhowsPbvgK-cL99fiCivCi-Z46ud1baQpc2_HHFIOzqGjCUGg%3D%3D" target="_blank" class="service-link">Book Now <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="service-card reveal" style="transition-delay: 0.3s;">
+                    <img src="./image-5.jpg" alt="Skincare & Facials" class="service-img">
+                    <div class="service-content">
+                        <h3 class="service-title h-sm">Skincare & Facials</h3>
+                        <p class="service-desc">Customized facial treatments designed to cleanse, exfoliate, and nourish your skin for a youthful glow.</p>
+                        <a href="https://www.vagaro.com/googlemap/U2FsdGVkX19u~97P1rbmw6iJ7gZhGV7HQNCS~dK3bQ4=/services?rwg_token=AFd1xnGBqdtRcvrcZkRwK3xIYOzIVJ7sQBW9JRGHjXbSfNVcPGhowsPbvgK-cL99fiCivCi-Z46ud1baQpc2_HHFIOzqGjCUGg%3D%3D" target="_blank" class="service-link">Book Now <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PRICING MENU -->
+    <section class="menu-section reveal">
+        <div class="container">
+            <div class="text-center">
+                <span class="eyebrow">Investment in Wellness</span>
+                <h2 class="h-md">Service Menu</h2>
+            </div>
+            
+            <div class="menu-container">
+                <div class="menu-category">
+                    <h3 class="menu-category-title">Massage Therapy</h3>
+                    
+                    <div class="menu-item">
+                        <span class="menu-name">Swedish Relaxation Massage</span>
+                        <span class="menu-price">$95</span>
+                    </div>
+                    <p class="menu-desc">60 Minutes. Gentle, flowing strokes to promote total relaxation and improve circulation.</p>
+                    
+                    <div class="menu-item">
+                        <span class="menu-name">Deep Tissue Therapy</span>
+                        <span class="menu-price">$115</span>
+                    </div>
+                    <p class="menu-desc">60 Minutes. Intensive pressure targeting deep muscle layers to relieve chronic pain.</p>
+                    
+                    <div class="menu-item">
+                        <span class="menu-name">Hot Stone Massage</span>
+                        <span class="menu-price">$130</span>
+                    </div>
+                    <p class="menu-desc">75 Minutes. Smooth, heated stones melt away tension and ease muscle stiffness.</p>
+                </div>
+
+                <div class="menu-category">
+                    <h3 class="menu-category-title">Specialized Care</h3>
+                    
+                    <div class="menu-item">
+                        <span class="menu-name">Post-Op Lymphatic Drainage</span>
+                        <span class="menu-price">$120</span>
+                    </div>
+                    <p class="menu-desc">60 Minutes. Crucial for reducing swelling and accelerating healing after cosmetic procedures.</p>
+                    
+                    <div class="menu-item">
+                        <span class="menu-name">Signature Rejuvenating Facial</span>
+                        <span class="menu-price">$105</span>
+                    </div>
+                    <p class="menu-desc">60 Minutes. Deep cleanse, exfoliation, extractions, and a customized mask.</p>
+                </div>
+                
+                <div class="text-center" style="margin-top: 3rem;">
+                    <a href="https://www.vagaro.com/googlemap/U2FsdGVkX19u~97P1rbmw6iJ7gZhGV7HQNCS~dK3bQ4=/services?rwg_token=AFd1xnGBqdtRcvrcZkRwK3xIYOzIVJ7sQBW9JRGHjXbSfNVcPGhowsPbvgK-cL99fiCivCi-Z46ud1baQpc2_HHFIOzqGjCUGg%3D%3D" target="_blank" class="btn btn-primary">View Full Menu & Book</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- NEWSLETTER -->
+    <section class="newsletter-section reveal">
+        <div class="glass-panel newsletter-box">
+            <h2 class="h-md">Join Our VIP List</h2>
+            <p>Subscribe to receive exclusive offers, wellness tips, and updates on our latest services.</p>
+            <form class="newsletter-form" onsubmit="event.preventDefault(); alert('Thank you for subscribing!');">
+                <input type="email" class="newsletter-input" placeholder="Enter your email address" required>
+                <button type="submit" class="btn btn-primary">Subscribe</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- THE TEAM -->
+    <section class="team-section">
+        <div class="container">
+            <div class="text-center reveal">
+                <span class="eyebrow">The Experts</span>
+                <h2 class="h-md">Meet Our Therapists</h2>
+            </div>
+            <div class="team-grid">
+                <div class="team-card reveal" style="transition-delay: 0.1s;">
+                    <div class="team-img-wrap">
+                        <img src="./image-6.jpg" alt="Master Therapist">
+                    </div>
+                    <h3 class="team-name">Elena R.</h3>
+                    <div class="team-role">Lead Massage Therapist</div>
+                    <p>Specializing in Deep Tissue and Pain Management.</p>
+                    <a href="tel:7868731191" class="btn btn-outline" style="padding: 0.5rem 1.5rem; font-size: 0.8rem;">Book Elena</a>
+                </div>
+                <div class="team-card reveal" style="transition-delay: 0.2s;">
+                    <div class="team-img-wrap">
+                        <img src="./image-7.jpg" alt="Lymphatic Specialist">
+                    </div>
+                    <h3 class="team-name">Maria S.</h3>
+                    <div class="team-role">Post-Op Specialist</div>
+                    <p>Expert in Lymphatic Drainage and recovery care.</p>
+                    <a href="tel:7868731191" class="btn btn-outline" style="padding: 0.5rem 1.5rem; font-size: 0.8rem;">Book Maria</a>
+                </div>
+                <div class="team-card reveal" style="transition-delay: 0.3s;">
+                    <div class="team-img-wrap">
+                        <img src="./image-8.jpg" alt="Esthetician">
+                    </div>
+                    <h3 class="team-name">Sarah J.</h3>
+                    <div class="team-role">Licensed Esthetician</div>
+                    <p>Passionate about holistic skincare and glowing results.</p>
+                    <a href="tel:7868731191" class="btn btn-outline" style="padding: 0.5rem 1.5rem; font-size: 0.8rem;">Book Sarah</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- BEFORE & AFTER SPOTLIGHT -->
+    <section class="spotlight-section reveal">
+        <div class="container">
+            <div class="text-center">
+                <span class="eyebrow">Real Results</span>
+                <h2 class="h-md">Healing Transformations</h2>
+                <p style="max-width: 600px; margin: 0 auto;">See the difference our specialized post-op care and lymphatic drainage can make in your recovery journey.</p>
+            </div>
+            <div class="spotlight-grid">
+                <div class="spotlight-card">
+                    <span class="spotlight-label">Before</span>
+                    <img src="./image-9.jpg" alt="Before Treatment">
+                </div>
+                <div class="spotlight-card">
+                    <span class="spotlight-label" style="background: var(--primary); color: var(--bg-base);">After</span>
+                    <img src="./image-10.jpg" alt="After Treatment">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SOCIAL FEED -->
+    <section class="social-section reveal">
+        <div class="container">
+            <span class="eyebrow">Follow Our Journey</span>
+            <h2 class="h-md">On The Gram</h2>
+            <div class="social-grid">
+                <div class="social-item">
+                    <img src="./image-11.jpg" alt="Instagram Post">
+                    <div class="social-overlay">
+                        <div class="social-stat"><i class="fas fa-heart"></i> 124</div>
+                        <div class="social-stat"><i class="fas fa-comment"></i> 12</div>
+                    </div>
+                </div>
+                <div class="social-item">
+                    <img src="./image-12.jpg" alt="Instagram Post">
+                    <div class="social-overlay">
+                        <div class="social-stat"><i class="fas fa-heart"></i> 89</div>
+                        <div class="social-stat"><i class="fas fa-comment"></i> 5</div>
+                    </div>
+                </div>
+                <div class="social-item">
+                    <img src="./image-13.jpg" alt="Instagram Post">
+                    <div class="social-overlay">
+                        <div class="social-stat"><i class="fas fa-heart"></i> 210</div>
+                        <div class="social-stat"><i class="fas fa-comment"></i> 24</div>
+                    </div>
+                </div>
+                <div class="social-item">
+                    <img src="./image-14.jpg" alt="Instagram Post">
+                    <div class="social-overlay">
+                        <div class="social-stat"><i class="fas fa-heart"></i> 156</div>
+                        <div class="social-stat"><i class="fas fa-comment"></i> 8</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- LUXURY PHOTO GALLERY (ALL 20 IMAGES) -->
+    <section class="gallery-section" id="gallery">
+        <div class="container">
+            <div class="text-center reveal">
+                <span class="eyebrow">Our Sanctuary</span>
+                <h2 class="h-md">The Experience</h2>
+            </div>
+            <div class="bento-grid reveal">
+                <!-- Using all 20 images explicitly as requested -->
+                <div class="bento-item"><img src="./image-1.jpg" alt="Gallery Image 1"></div>
+                <div class="bento-item"><img src="./image-2.jpg" alt="Gallery Image 2"></div>
+                <div class="bento-item"><img src="./image-3.jpg" alt="Gallery Image 3"></div>
+                <div class="bento-item"><img src="./image-4.jpg" alt="Gallery Image 4"></div>
+                <div class="bento-item"><img src="./image-5.jpg" alt="Gallery Image 5"></div>
+                <div class="bento-item"><img src="./image-6.jpg" alt="Gallery Image 6"></div>
+                <div class="bento-item"><img src="./image-7.jpg" alt="Gallery Image 7"></div>
+                <div class="bento-item"><img src="./image-8.jpg" alt="Gallery Image 8"></div>
+                <div class="bento-item"><img src="./image-9.jpg" alt="Gallery Image 9"></div>
+                <div class="bento-item"><img src="./image-10.jpg" alt="Gallery Image 10"></div>
+                <div class="bento-item"><img src="./image-11.jpg" alt="Gallery Image 11"></div>
+                <div class="bento-item"><img src="./image-12.jpg" alt="Gallery Image 12"></div>
+                <div class="bento-item"><img src="./image-13.jpg" alt="Gallery Image 13"></div>
+                <div class="bento-item"><img src="./image-14.jpg" alt="Gallery Image 14"></div>
+                <div class="bento-item"><img src="./image-15.jpg" alt="Gallery Image 15"></div>
+                <div class="bento-item"><img src="./image-16.jpg" alt="Gallery Image 16"></div>
+                <div class="bento-item"><img src="./image-17.jpg" alt="Gallery Image 17"></div>
+                <div class="bento-item"><img src="./image-18.jpg" alt="Gallery Image 18"></div>
+                <div class="bento-item"><img src="./image-19.jpg" alt="Gallery Image 19"></div>
+                <div class="bento-item"><img src="./image-20.jpg" alt="Gallery Image 20"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- REVIEWS -->
+    <section class="reviews-section" id="reviews">
+        <div class="container">
+            <div class="text-center reveal">
+                <span class="eyebrow">Client Love</span>
+                <h2 class="h-md">What They Say</h2>
+                <p>Join over 282 satisfied clients who have rated us 5 stars.</p>
+            </div>
+            
+            <div class="reviews-grid">
+                <div class="review-card glass-panel reveal" style="transition-delay: 0.1s;">
+                    <i class="fas fa-quote-left"></i>
+                    <div class="stars">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p class="review-text">"Absolutely amazing experience! The therapist was incredibly friendly and really listened to my needs. I came in with severe back pain, and the deep tissue massage provided immediate relief. Highly recommend!"</p>
+                    <div class="reviewer-name">- Sarah M. (Feb 2025)</div>
+                </div>
+                
+                <div class="review-card glass-panel reveal" style="transition-delay: 0.2s;">
+                    <i class="fas fa-quote-left"></i>
+                    <div class="stars">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p class="review-text">"I've been coming here for my post-op lymphatic drainage massages and the results are incredible. The staff is so knowledgeable and gentle. The facility is clean, relaxing, and truly heavenly."</p>
+                    <div class="reviewer-name">- Jessica T.</div>
+                </div>
+                
+                <div class="review-card glass-panel reveal" style="transition-delay: 0.3s;">
+                    <i class="fas fa-quote-left"></i>
+                    <div class="stars">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p class="review-text">"Best facial I've ever had! My skin is glowing. The ambiance is perfect for unwinding after a long week. I already bought a gift certificate for my mom because she needs to experience this."</p>
+                    <div class="reviewer-name">- Amanda R.</div>
+                </div>
+            </div>
+
+            <div class="text-center reveal">
+                <a href="https://www.google.com/maps/search/Heavenly%20Therapeutic%20Massage%20%22Massage%20and%20skincare%2042%20W%20Mowry%20Dr%20%23205%2C%20Homestead%2C%20FL%2033030%2C%20USA" target="_blank" class="btn btn-outline">Leave a Review on Google</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ SECTION -->
+    <section class="faq-section reveal">
+        <div class="container">
+            <div class="text-center">
+                <span class="eyebrow">Got Questions?</span>
+                <h2 class="h-md">Frequently Asked Questions</h2>
+            </div>
+            
+            <div class="faq-container">
+                <div class="faq-item">
+                    <button class="faq-question">What should I expect during my first visit? <i class="fas fa-chevron-down"></i></button>
+                    <div class="faq-answer">
+                        <p>Please arrive 10-15 minutes early to fill out a brief intake form. Your therapist will consult with you about your specific needs, areas of tension, and pressure preferences before beginning the session to ensure a customized experience.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">When should I start lymphatic drainage after surgery? <i class="fas fa-chevron-down"></i></button>
+                    <div class="faq-answer">
+                        <p>Most surgeons recommend starting lymphatic drainage massages 3 to 5 days post-operation, but always consult with your doctor first. Our specialists are highly trained to provide gentle, effective care during your recovery.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">Do you offer gift certificates? <i class="fas fa-chevron-down"></i></button>
+                    <div class="faq-answer">
+                        <p>Yes! We offer beautifully designed gift certificates for all of our massage and skincare services. They make the perfect gift for birthdays, anniversaries, or just to show someone you care.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">What is your cancellation policy? <i class="fas fa-chevron-down"></i></button>
+                    <div class="faq-answer">
+                        <p>We require a 24-hour notice for any cancellations or rescheduling. This allows us to offer the time slot to other clients. Late cancellations may be subject to a fee.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- MAP & HOURS -->
+    <section class="location-section reveal">
+        <div class="container location-grid">
+            <div class="map-container">
+                <iframe src="https://maps.google.com/maps?q=42%20W%20Mowry%20Dr%20%23205%2C%20Homestead%2C%20FL%2033030%2C%20USA&t=&z=15&ie=UTF8&iwloc=&output=embed" style="border:0;width:100%;height:450px;border-radius:var(--radius-md);filter:invert(90%) hue-rotate(180deg) contrast(1.2);" allowfullscreen loading="lazy"></iframe>
+            </div>
+            <div class="hours-card glass-panel">
+                <h3 class="h-sm" style="color: var(--primary); margin-bottom: 0.5rem;">Visit Us</h3>
+                <p><i class="fas fa-map-marker-alt" style="color: var(--primary); margin-right: 10px;"></i> 42 W Mowry Dr #205, Homestead, FL 33030</p>
+                <p><i class="fas fa-phone" style="color: var(--primary); margin-right: 10px;"></i> (786) 873-1191</p>
+                
+                <ul class="hours-list">
+                    <li><span class="day">Monday</span> <span class="time">9:30 AM – 8:00 PM</span></li>
+                    <li><span class="day">Tuesday</span> <span class="time">9:30 AM – 8:00 PM</span></li>
+                    <li><span class="day">Wednesday</span> <span class="time">9:30 AM – 8:00 PM</span></li>
+                    <li><span class="day">Thursday</span> <span class="time">9:30 AM – 8:00 PM</span></li>
+                    <li><span class="day">Friday</span> <span class="time">9:30 AM – 8:00 PM</span></li>
+                    <li><span class="day">Saturday</span> <span class="time">9:30 AM – 8:00 PM</span></li>
+                    <li><span class="day" style="color: var(--primary);">Sunday</span> <span class="time" style="color: var(--primary);">10:00 AM – 4:00 PM</span></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- FINAL CTA BANNER (ONLY ONE) -->
+    <section class="final-cta reveal">
+        <div class="final-cta-content">
+            <h2 class="h-lg" style="margin-bottom: 1.5rem;">Ready to Experience Heaven?</h2>
+            <p style="font-size: 1.2rem; margin-bottom: 2.5rem; color: white;">Book your appointment today and take the first step towards total relaxation and rejuvenation.</p>
+            <a href="https://www.vagaro.com/googlemap/U2FsdGVkX19u~97P1rbmw6iJ7gZhGV7HQNCS~dK3bQ4=/services?rwg_token=AFd1xnGBqdtRcvrcZkRwK3xIYOzIVJ7sQBW9JRGHjXbSfNVcPGhowsPbvgK-cL99fiCivCi-Z46ud1baQpc2_HHFIOzqGjCUGg%3D%3D" target="_blank" class="btn btn-primary" style="font-size: 1.2rem; padding: 1.2rem 3.5rem;">Book Your Session Now</a>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <a href="#" class="logo" style="margin-bottom: 1.5rem; display: inline-flex;">
+                        <i class="fas fa-spa" style="color: var(--primary);"></i>
+                        Heavenly<span>Massage</span>
+                    </a>
+                    <p style="font-size: 0.9rem; max-width: 80%;">Dedicated to providing exceptional therapeutic massage and skincare services in a serene, luxurious environment. Your healing is our priority.</p>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#gallery">Gallery</a></li>
+                        <li><a href="#reviews">Reviews</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Contact Us</h4>
+                    <div class="contact-info">
+                        <p><i class="fas fa-map-marker-alt"></i> <span>42 W Mowry Dr #205<br>Homestead, FL 33030</span></p>
+                        <p><i class="fas fa-phone"></i> <a href="tel:7868731191">(786) 873-1191</a></p>
+                        <p><i class="fas fa-envelope"></i> <a href="mailto:info@heavenlymassage.com">info@heavenlymassage.com</a></p>
+                    </div>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Connect Instantly</h4>
+                    <img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://www.vagaro.com/googlemap/U2FsdGVkX19u~97P1rbmw6iJ7gZhGV7HQNCS~dK3bQ4=/services?rwg_token=AFd1xnGBqdtRcvrcZkRwK3xIYOzIVJ7sQBW9JRGHjXbSfNVcPGhowsPbvgK-cL99fiCivCi-Z46ud1baQpc2_HHFIOzqGjCUGg%3D%3D" alt="Scan to Connect" class="qr-code">
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-tiktok"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                &copy; 2025 Heavenly Therapeutic Massage "Massage and skincare". All rights reserved. Built by SiteFlow
+            </div>
+        </div>
+    </footer>
+
+    <!-- STICKY MOBILE CTA -->
+    <a href="https://www.vagaro.com/googlemap/U2FsdGVkX19u~97P1rbmw6iJ7gZhGV7HQNCS~dK3bQ4=/services?rwg_token=AFd1xnGBqdtRcvrcZkRwK3xIYOzIVJ7sQBW9JRGHjXbSfNVcPGhowsPbvgK-cL99fiCivCi-Z46ud1baQpc2_HHFIOzqGjCUGg%3D%3D" target="_blank" class="mobile-sticky-cta">Book Appointment Now</a>
+
+    <!-- FLOATING CHAT WIDGET -->
+    <div class="chat-widget" id="chatWidget">
+        <div class="chat-panel" id="chatPanel">
+            <div class="chat-header">
+                <div class="chat-profile">
+                    <img src="./image-1.jpg" alt="Support" class="chat-avatar">
+                    <div>
+                        <div class="chat-name">Support Team</div>
+                        <div class="chat-status">Online</div>
+                    </div>
+                </div>
+                <button class="chat-close" id="chatCloseBtn" style="background:none;border:none;color:white;font-size:20px;cursor:pointer;"><i class="fas fa-times"></i></button>
+            </div>
+            <div class="chat-body" id="chatBody">
+                <div class="chat-bubble bubble-in">Hi there! How can we help you at Heavenly Therapeutic Massage today?</div>
+                <div class="chat-time">Just now</div>
+                
+                <div class="chat-quick-replies">
+                    <button class="quick-reply-btn" onclick="sendQuickReply('Hours?', 'We are open Mon-Sat 9:30 AM - 8:00 PM, and Sun 10:00 AM - 4:00 PM.')">Hours?</button>
+                    <button class="quick-reply-btn" onclick="sendQuickReply('Location?', 'We are located at 42 W Mowry Dr #205, Homestead, FL 33030.')">Location?</button>
+                    <button class="quick-reply-btn" onclick="sendQuickReply('Services?', 'We offer Deep Tissue, Lymphatic Drainage, Skincare, and more!')">Services?</button>
+                    <button class="quick-reply-btn" onclick="sendQuickReply('WhatsApp Us', '<a href=\'https://wa.me/7868731191\' target=\'_blank\' style=\'text-decoration: underline; color: #25D366;\'>💬 Chat with us on WhatsApp!</a>')">WhatsApp Us</button>
+                    <button class="quick-reply-btn" onclick="sendQuickReply('Leave a Review', '<a href=\'https://www.google.com/maps/search/Heavenly%20Therapeutic%20Massage%20%22Massage%20and%20skincare%2042%20W%20Mowry%20Dr%20%23205%2C%20Homestead%2C%20FL%2033030%2C%20USA\' target=\'_blank\' style=\'text-decoration: underline; color: #3b82f6;\'>Click here to leave a Google Review!</a>')">Leave a Review</button>
+                </div>
+            </div>
+            <div class="chat-input-area">
+                <input type="text" class="chat-input" placeholder="Type a message..." id="chatInput">
+                <button class="chat-submit" onclick="handleChatSubmit()"><i class="fas fa-paper-plane"></i></button>
+            </div>
+        </div>
+        <button class="chat-fab" id="chatFab">
+            <i class="fas fa-comment-dots"></i>
+        </button>
+    </div>
+
+    <!-- PROMO POPUP -->
+    <div class="popup-overlay" id="promoPopup">
+        <div class="popup-content">
+            <button class="popup-close close-modal"><i class="fas fa-times"></i></button>
+            <h2 class="h-md" style="color: var(--primary); margin-bottom: 1rem;">Get 15% Off!</h2>
+            <p>Claim 15% off your first massage or facial when you join our VIP list today.</p>
+            <form style="display: flex; flex-direction: column; gap: 1rem; margin-top: 2rem;" onsubmit="event.preventDefault(); document.getElementById('promoPopup').style.display='none'; alert('Offer claimed! Check your email.');">
+                <input type="email" placeholder="Enter your email" required style="padding: 1rem; border-radius: 999px; border: 1px solid var(--glass-border); background: rgba(255,255,255,0.05); color: white; outline: none;">
+                <button type="submit" class="btn btn-primary" style="width: 100%;">Claim Offer</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- JAVASCRIPT -->
+    <script>
+        // 1. PRELOADER
+        window.addEventListener('load', () => {
+            const preloader = document.getElementById('preloader');
+            setTimeout(() => {
+                preloader.style.opacity = '0';
+                preloader.style.visibility = 'hidden';
+                setTimeout(() => preloader.remove(), 800);
+            }, 1500);
+        });
+
+        // 2. MOBILE MENU (Step C)
+        const hamburgerBtn = document.getElementById('hamburgerBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+        const closeMobileMenu = document.getElementById('closeMobileMenu');
+        const mobileLinks = mobileMenu.querySelectorAll('a');
+
+        hamburgerBtn.addEventListener('click', () => {
+            mobileMenu.style.transform = 'translateX(0)';
+        });
+
+        closeMobileMenu.addEventListener('click', () => {
+            mobileMenu.style.transform = 'translateX(100%)';
+        });
+
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.style.transform = 'translateX(100%)';
+            });
+        });
+
+        // 3. REACTIVE NAV
+        window.addEventListener('scroll', () => {
+            const nav = document.getElementById('navbar');
+            if (window.scrollY > 50) {
+                nav.classList.add('scrolled');
+            } else {
+                nav.classList.remove('scrolled');
+            }
+        });
+
+        // 4. OPEN/CLOSED BADGE (Isolated in try/catch)
+        try {
+            function updateStatus() {
+                const badge = document.getElementById('statusBadge');
+                const text = badge.querySelector('.status-text');
+                
+                // Get current time in EST (Florida)
+                const now = new Date();
+                const estTime = new Date(now.toLocaleString("en-US", {timeZone: "America/New_York"}));
+                const day = estTime.getDay(); // 0 = Sun, 1 = Mon, etc.
+                const hour = estTime.getHours();
+                const minutes = estTime.getMinutes();
+                const currentTime = hour + (minutes / 60);
+
+                let isOpen = false;
+
+                // Mon-Sat (1-6): 9:30 AM (9.5) - 8:00 PM (20.0)
+                if (day >= 1 && day <= 6) {
+                    if (currentTime >= 9.5 && currentTime < 20) isOpen = true;
+                } 
+                // Sun (0): 10:00 AM (10.0) - 4:00 PM (16.0)
+                else if (day === 0) {
+                    if (currentTime >= 10 && currentTime < 16) isOpen = true;
+                }
+
+                if (isOpen) {
+                    badge.classList.remove('status-closed');
+                    badge.classList.add('status-open');
+                    text.textContent = 'OPEN NOW';
+                } else {
+                    badge.classList.remove('status-open');
+                    badge.classList.add('status-closed');
+                    text.textContent = 'CLOSED';
+                }
+            }
+            updateStatus();
+            setInterval(updateStatus, 60000); // Check every minute
+        } catch (e) {
+            console.error("Error with Open/Closed badge logic:", e);
+        }
+
+        // 5. SCROLL REVEAL (Intersection Observer)
+        const revealElements = document.querySelectorAll('.reveal');
+        const revealObserver = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('revealed');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.15, rootMargin: "0px 0px -50px 0px" });
+
+        revealElements.forEach(el => revealObserver.observe(el));
+
+        // 6. STATS COUNTER
+        const countElements = document.querySelectorAll('.count');
+        let hasCounted = false;
+
+        const countObserver = new IntersectionObserver((entries) => {
+            if (entries[0].isIntersecting && !hasCounted) {
+                hasCounted = true;
+                countElements.forEach(el => {
+                    const target = parseInt(el.getAttribute('data-target'));
+                    const duration = 2000; // 2 seconds
+                    const step = target / (duration / 16); // 60fps
+                    let current = 0;
+
+                    const updateCount = () => {
+                        current += step;
+                        if (current < target) {
+                            el.innerText = Math.ceil(current);
+                            requestAnimationFrame(updateCount);
+                        } else {
+                            el.innerText = target;
+                        }
+                    };
+                    updateCount();
+                });
+            }
+        }, { threshold: 0.5 });
+
+        const statsSection = document.querySelector('.stats-section');
+        if(statsSection) countObserver.observe(statsSection);
+
+        // 7. FAQ ACCORDION
+        const faqItems = document.querySelectorAll('.faq-item');
+        faqItems.forEach(item => {
+            const btn = item.querySelector('.faq-question');
+            btn.addEventListener('click', () => {
+                const isActive = item.classList.contains('active');
+                
+                // Close all
+                faqItems.forEach(i => {
+                    i.classList.remove('active');
+                    i.querySelector('.faq-answer').style.maxHeight = null;
+                });
+
+                // Open clicked if it wasn't active
+                if (!isActive) {
+                    item.classList.add('active');
+                    const answer = item.querySelector('.faq-answer');
+                    answer.style.maxHeight = answer.scrollHeight + "px";
+                }
+            });
+        });
+
+        // 8. CHAT WIDGET LOGIC
+        try {
+            const chatFab = document.getElementById('chatFab');
+            const chatPanel = document.getElementById('chatPanel');
+            const chatCloseBtn = document.getElementById('chatCloseBtn');
+            const chatBody = document.getElementById('chatBody');
+            const chatInput = document.getElementById('chatInput');
+            let isChatOpen = false;
+
+            function toggleChat() {
+                isChatOpen = !isChatOpen;
+                if (isChatOpen) {
+                    chatPanel.classList.add('active');
+                    chatFab.innerHTML = '<i class="fas fa-times"></i>';
+                } else {
+                    chatPanel.classList.remove('active');
+                    chatFab.innerHTML = '<i class="fas fa-comment-dots"></i>';
+                }
+            }
+
+            chatFab.addEventListener('click', toggleChat);
+            chatCloseBtn.addEventListener('click', toggleChat);
+
+            window.sendQuickReply = function(question, answerHtml) {
+                // Add user question
+                appendMessage(question, 'out');
+                // Remove quick replies
+                const qr = document.querySelector('.chat-quick-replies');
+                if(qr) qr.style.display = 'none';
+                
+                // Simulate typing delay
+                setTimeout(() => {
+                    appendMessage(answerHtml, 'in');
+                }, 600);
+            };
+
+            window.handleChatSubmit = function() {
+                const text = chatInput.value.trim();
+                if (!text) return;
+                appendMessage(text, 'out');
+                chatInput.value = '';
+                
+                setTimeout(() => {
+                    appendMessage("Thank you for your message! A member of our team will get back to you shortly. For immediate assistance, please call (786) 873-1191.", 'in');
+                }, 1000);
+            };
+
+            chatInput.addEventListener('keypress', function (e) {
+                if (e.key === 'Enter') handleChatSubmit();
+            });
+
+            function appendMessage(text, type) {
+                const bubble = document.createElement('div');
+                bubble.className = `chat-bubble bubble-${type}`;
+                bubble.innerHTML = text;
+                
+                const time = document.createElement('div');
+                time.className = 'chat-time';
+                time.innerText = 'Just now';
+
+                chatBody.appendChild(bubble);
+                chatBody.appendChild(time);
+                chatBody.scrollTop = chatBody.scrollHeight;
+            }
+        } catch (e) {
+            console.error("Chat widget error:", e);
+        }
+
+        // 9. PROMO POPUP LOGIC
+        setTimeout(() => {
+            const popup = document.getElementById('promoPopup');
+            if(popup) {
+                popup.style.display = 'flex';
+                // Small delay to allow display:flex to apply before opacity transition
+                setTimeout(() => {
+                    popup.style.opacity = '1';
+                    popup.querySelector('.popup-content').style.transform = 'translateY(0)';
+                }, 50);
+            }
+        }, 8000); // Show after 8 seconds
+
+        // 10. CRITICAL MODAL CLOSE LOGIC (Mandatory)
+        document.body.addEventListener('click', e => { 
+            if(e.target.closest('.close-modal, .modal-close, .close, [aria-label="Close"]') || e.target.classList.contains('popup-overlay')) { 
+                const m = e.target.closest('.modal, .popup, #promoPopup, .fixed, .popup-overlay'); 
+                if(m) {
+                    m.style.opacity = '0';
+                    setTimeout(() => m.style.display = 'none', 400);
+                } else {
+                    document.querySelectorAll('.modal, .popup, #promoPopup, .popup-overlay').forEach(p=>{
+                        p.style.opacity = '0';
+                        setTimeout(() => p.style.display = 'none', 400);
+                    }); 
+                } 
+            } 
+        });
+
+    </script>
+</body>
+</html>
